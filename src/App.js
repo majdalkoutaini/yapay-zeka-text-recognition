@@ -34,7 +34,7 @@ const App = () => {
         setIsLoading(false);
       });
   };
-  /* logo Handler */
+
   const newLogoHandler = (e) => {
     var idxDot = e.target.value.lastIndexOf(".") + 1;
     var extFile = e.target.value.substr(idxDot, e.target.value.length).toLowerCase();
@@ -106,12 +106,11 @@ const App = () => {
           </div>
         </div>
       </div>
-      {/* changing Logo popup modal */}
+
       <SimpleModal closeModalHandler={() => setShowLogoPopup(false)} active={showLogoPopup}>
         <div className={classes["logo-popup"]}>
           <div className={classes.main}>
             <div className={classes.header}>
-              <span>edit shop logo</span>
               <CloseIcon onClick={() => setShowLogoPopup(false)} />
             </div>
             <div className={classes.editor}>
@@ -153,3 +152,4 @@ const App = () => {
 };
 
 export default App;
+
