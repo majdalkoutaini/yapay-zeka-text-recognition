@@ -82,6 +82,7 @@ const App = () => {
               <br /> Yapay Zeka Dersi
             </h1>
             <p>Majed Aldın Alkoutaını 1911404092</p>
+            <p>Ahmad Alassı 1911404095</p>
             {isLoading && (
               <>
                 <progress className="form-control" value={progress} max="100">
